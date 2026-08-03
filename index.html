@@ -10,26 +10,30 @@
 <body>
 
    <header>
-    <div class="name"></div>
-    <nav>
-<button class="navbar-btn">
-  <span></span>
-  <span></span>
-  <span></span>
-  </button>
-  <div class="navbar-item">
-      <ul>
-        <li><a href="#aboutme" >About Me</a></li>
-        <li><a href="#education" >Education</a></li>
-        <li><a href="#skills" >Skills</a></li>
-        <li><a href="#projects" >Projects</a></li>
-        <li><a href="#certification">Certification</a></li>
-        <li><a href="#extra" >Extra Curricular Activities</a></li>
-        <li><a href="#contact" >Contact</a></li>
-      </ul>
+
+    <!-- <a href="#" class="logo">OVIYA</a> -->
+
+    <button class="navbar-btn" id="menu-btn">
+        ☰
+    </button>
+
+    <nav class="navbar-item" id="navbar">
+ 
+        <ul>
+
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#certification">Certification</a></li>
+            <li><a href="#extra">Extra Curricular Activities</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
     </nav>
-  </div>
-  </header>  
+
+</header>
   <script>
     const navbarBtn = document.querySelector('.navbar-btn');
     const navbarItem = document.querySelector('.navbar-item');
@@ -48,26 +52,13 @@
  <!-- ================= HERO SECTION ================= -->
 
 <section class="hero" id="home">
-
     <!-- Left Content -->
-
     <div class="hero-content">
-
-        <h3>Hello, I'm</h3>
-
-        <h1 class="shine">OVIYA</h1>
-
-        <h2>
-            Data Analyst &
-            <span>Full Stack Developer</span>
-        </h2>
+<h3>Hello, I'm</h3>
+<h1>OVIYA</h1>
+<h2>Data Analyst &<br><span>Stack Developer</span></h2>
 
         <div class="hero-buttons">
-
-            <!-- <a href="#projects" class="btn">
-                View Projects
-            </a> -->
-
             <a href="assets/OVIYA M D - RESUME-COMMON.pdf.pdf" class="btn btn2" download>
                 Download Resume
             </a>
@@ -170,16 +161,26 @@
 
                
     
-<section id="projects">
+<section id="project">
     <h2>Projects</h2>
   <div class="project-slider">
+    <div class="project-card">
+      <img src="image2/ipl image.jpg" alt="Project 1">
+      <h3>IPL Data Analysis</h3>
+      <p>Analysing IPL Dataset (2008-2024) to using Tableau.</p>
+      <div class="btn-group">
+      <a href="https://public.tableau.com/views/IPLDataAnalysis_17856692706230/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="btn">View Project</a>
+      </div>
+    </div>
+
     <div class="project-card">
       <img src="./image2/Portfolio.jpg" alt="Project 1">
       <h3>Portfolio Website</h3>
       <p>A personal portfolio website built with HTML, CSS, and JavaScript.</p>
       <div class="btn-group">
-      <a href="D:\MyPortfolio\index.html" class="btn">View Project</a>
-      <a href="" target="_blank" class="btn code-btn">View Code</a>
+ <a href="d:\MyPortfolio\index.html" class="btn">View Code</a> 
+      <a href="" target="_blank" class="btn code-btn">View Project</a>
+     
       </div>
     </div>
 
@@ -188,9 +189,10 @@
       <h3>Pac-Man game</h3>
       <p>Developed a classic Pac-Man arcade game clone using HTML, CSS, and JavaScript.</p>
       <div class="btn-group">
-      <a href="D:\PG CS\pg sem1\javascript\week3 unit3\assignment\pacman assign 3.1.html" class="btn">View Project</a>
-      <a href="https://github.com/RathnavelSubramaniam/coding-assignment-3-Oviyadhanagopal/blob/main/pacman%20assign%203.1.html" target="_blank" class="btn code-btn">View Code</a>
-      </div>
+              <a href="https://github.com/Oviyadhanagopal/project1/blob/main/index.html" class="btn">View Code</a>    
+
+    <a href="https://oviyadhanagopal.github.io/project1/" target="_blank" class="btn codebtn">View Project</a>   
+  </div>
     </div>
 
     <div class="project-card">
@@ -198,8 +200,10 @@
       <h3>Moving Ball Animation</h3>
       <p>An interactive animation project created using HTML,CSS and JavaScript.</p>
       <div class="btn-group">
-      <a href="D:\PG CS\pg sem1\javascript\week2 unit2\assignments\assignment2.1.html" class="btn">View Project</a>
-      <a href="https://github.com/RathnavelSubramaniam/coding-assignment-2-Oviyadhanagopal/blob/main/assignment2.1.html" target="_blank" class="btn code-btn">View Code</a>
+        <a href="https://github.com/Oviyadhanagopal/project2/blob/main/index.html" 
+class="btn">View Code</a> 
+      <a href="https://oviyadhanagopal.github.io/project2/" target="_blank" class="btn code
+btn">View Project</a> 
       </div>
     </div>
 
@@ -208,9 +212,10 @@
       <h3>Multi PacMan</h3>
       <p>Developed a classic Pac-Man arcade game clone using HTML, CSS, and JavaScript</p>
       <div class="btn-group">
-      <a href="D:\PG CS\pg sem1\javascript\week6 unit6\assignments\multiple pacman ass6.html" class="btn">View Project</a>
-      <a href="https://github.com/RathnavelSubramaniam/Coding_Assignment_6-Oviyadhanagopal/blob/main/multiple%20pacman%20ass6.html" target="_blank" class="btn code-btn">View Code</a>
-      </div>
+        <a href="https://github.com/Oviyadhanagopal/project3/blob/main/index.html" 
+class="btn">View Code</a> 
+      <a href="https://oviyadhanagopal.github.io/project3/" target="_blank" class="btn code
+btn">View Project</a>        </div>
     </div>
   
    
@@ -219,8 +224,10 @@
       <h3>TO-DO List</h3>
       <p>JavaScript allows you to manipulate the DOM to add, remove, or update any element on a web page.</p>
       <div class="btn-group">
-      <a href="D:\PG CS\pg sem1\javascript\week6 unit6\activity\activity6.3.html" class="btn">View Project</a>
-      <a href="https://github.com/RathnavelSubramaniam/coding-activity-6-Oviyadhanagopal/blob/main/activity6.3.html" target="_blank" class="btn code-btn">View Code</a>
+        <a href="https://github.com/Oviyadhanagopal/project4/blob/main/index.html" 
+class="btn">View Code</a> 
+      <a href="https://oviyadhanagopal.github.io/project4/" target="_blank" class="btn code
+btn">View Project</a> 
       </div>
     </div>
 
@@ -229,8 +236,10 @@
       <h3>Eye Movement</h3>
       <p>Developed a classic Eye Movement game using HTML, CSS and JavaScript</p>
       <div class="btn-group">
-      <a href="D:\PG CS\pg sem1\javascript\week 7\eye ball assignment7.html" class="btn">View Project</a>
-      <a href="https://github.com/RathnavelSubramaniam/coding-assignment-7-Oviyadhanagopal/blob/main/eye%20ball%20assignment7.html" target="_blank" class="btn code-btn">View Code</a>
+       <a href="https://github.com/Oviyadhanagopal/project5/blob/main/index.html" 
+class="btn">View Code</a> 
+      <a href="https://oviyadhanagopal.github.io/project5/" target="_blank" class="btn code
+btn">View Project</a> 
       </div>
     </div>
 
@@ -239,8 +248,10 @@
       <h3>Dynamic Grid-Box</h3>
       <p>Developed a classic Dynamic grid box using HTML, CSS, and Javascript</p>
       <div class="btn-group">
-      <a href=":\PG CS\pg sem1\javascript\week 7\activity\activity js 7.3.html"class="btn">View Project</a>
-      <a href="https://github.com/RathnavelSubramaniam/coding-activity-7-Oviyadhanagopal/blob/main/activity%20js%207.3.html" target="_blank" class="btn code-btn">View Code</a>
+       <a href="https://github.com/Oviyadhanagopal/project6/blob/main/index.html" 
+class="btn">View Code</a> 
+      <a href="https://oviyadhanagopal.github.io/project6/" target="_blank" class="btn code
+btn">View Project</a>
       </div>
     </div>
     </div>
@@ -556,19 +567,28 @@
 </script>
 
 
- <footer id="footer">
-    <div class="footer container">
-      <div class="footer-card">
-      <div class="social-links">  
-        <a href="tel:+919789794989" target="blank" class="shine"><i class='bx bx-phone'></i></a>
-        <a href="https://www.linkedin.com/in/OviyaMD" target="_blank" class="shine"><i class='bx bxl-linkedin'></i></a>
-        <a href="mailto:oviya2552004@gmail.com" target="_blank" class="shine"><i class='bx bxl-gmail'></i></a>
-        <a href="https://github.com/Oviyadhanagopal" target="_blank" class="shine"><i class='bx bxl-github'></i></a>
-        
-      </div>
-      <p>&copy; 2025 Oviya. All Rights Reserved.</p>
-    </div>
-  </footer>
+ <footer>
+
+<div class="footer-card">
+
+<div class="social-links">
+
+<a href="tel:+919789794989" target="blank" class="shine"><i class='bx bx-phone'></i></a>
+
+<a href="https://www.linkedin.com/in/OviyaMD" target="blank" class="shine"><i class='bx bxl-linkedin'></i></a>
+
+<a href="mailto:oviya2552004@gmail.com" target="blank" class="shine"><i class='bx bxl-gmail'></i></a>
+
+<a href="https://github.com/Oviyadhanagopal" target="blank" class="shine"><i class='bx bxl-github'></i></a>
+
+</div>
+
+<p>©2026 Oviya. All Rights Reserved.</p>
+
+</div>
+
+</footer>
   
 </body>
 </html>
+
