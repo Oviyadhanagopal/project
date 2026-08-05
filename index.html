@@ -10,9 +10,6 @@
 <body>
 
    <header>
-
-    <!-- <a href="#" class="logo">OVIYA</a> -->
-
     <button class="navbar-btn" id="menu-btn">
           ☰
     </button>
@@ -34,44 +31,7 @@
     </nav>
 
 </header>
-<script>
 
-const menuBtn = document.getElementById("menuBtn");
-const navbar = document.getElementById("navbar");
-
-menuBtn.onclick = function(){
-
-    navbar.classList.toggle("active");
-
-}
-const links = document.querySelectorAll(".navbar-item a");
-
-links.forEach(link => {
-
-    link.addEventListener("click", () => {
-
-        navbar.classList.remove("active");
-
-    });
-
-});
-menuBtn.onclick = function(){
-
-    navbar.classList.toggle("active");
-
-    if(navbar.classList.contains("active")){
-
-        menuBtn.innerHTML="✖";
-
-    }
-    else{
-
-        menuBtn.innerHTML="☰";
-
-    }
-
-}
-</script>
 
   
  <!-- ================= HERO SECTION ================= -->
@@ -613,7 +573,32 @@ btn">View Project</a>
 </div>
 
 </footer>
-  
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+const navbar = document.getElementById("navbar");
+
+menuBtn.addEventListener("click", () => {
+
+    navbar.classList.toggle("active");
+
+    if(navbar.classList.contains("active")){
+        menuBtn.innerHTML = "✖";
+    }else{
+        menuBtn.innerHTML = "☰";
+    }
+
+});
+
+// Close menu after clicking a link
+const links = document.querySelectorAll(".navbar-item a");
+
+links.forEach(link => {
+    link.addEventListener("click", () => {
+        navbar.classList.remove("active");
+        menuBtn.innerHTML = "☰";
+    });
+});
+</script>
 </body>
 </html>
 
